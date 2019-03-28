@@ -11,7 +11,7 @@ In this example we show how to run an API call fetching transaction data for a p
 Go to 
 
 ```
-booking.service.ts
+src/app/services/booking.service.ts
 ```
 
 and update the URL and the token from your dedicated sandbox to allow the application to run the API call against the sandbox.
