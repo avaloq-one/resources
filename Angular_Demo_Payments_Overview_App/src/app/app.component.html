@@ -1,0 +1,51 @@
+<div class="app-container">
+
+  <div class="header">
+    <div class="header-title">
+      <h1>Your payments overview</h1>
+    </div>
+  </div>
+
+  <div class="account-infos">
+    <div *ngIf=bookingTable>
+      <p>Credit: {{bookingTable.sumCredit | number: '.2-2'}}</p>
+      <p>Debit: {{bookingTable.sumDebit | number: '.2-2'}}</p>
+    </div>
+  </div>
+
+  <div class="date-picker">
+    <mat-form-field>
+      <input matInput [(ngModel)]="startDate" [matDatepicker]="picker" placeholder="Choose the starting date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="endDate" [matDatepicker]="picker2" placeholder="Choose the end date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+
+    <div class="button">
+      <a (click)="test()">Search</a>
+    </div>
+
+
+  </div>
+
+
+  <div class="bar-chart">
+    <div *ngIf=bookingTable>
+      <div style="display: block">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Happy coding with Avaloq Open APIs!
+  </div>
+
+</div>

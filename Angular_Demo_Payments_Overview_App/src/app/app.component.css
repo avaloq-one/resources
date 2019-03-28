@@ -1,0 +1,63 @@
+.app-container{
+    display: grid;
+    grid-template-columns: 5px 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "bar-chart bar-chart  date-picker"
+    "bar-chart bar-chart account-infos"
+    "footer footer footer";
+    grid-row-gap: 10px;
+    font-family: opensans-semibold,sans-serif;
+}
+
+.header{
+    grid-area: header;
+    background-color: #0097db;
+    color: white
+}
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.date-picker{
+    grid-area: date-picker;
+    color: #0097db;
+}
+
+.bar-chart{
+    grid-area: bar-chart;
+    color: #0097db;
+}
+
+.account-infos{
+    grid-area: account-infos;
+    color: #0097db;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+    background-color: #0097db;
+    color: white;
+    padding: 20px;
+}
+
+.button{
+    text-align: center;
+    cursor: pointer;
+    border: 1px, solid transparent;
+    color: white;
+    background-color: #0097db;
+    border-radius: 30px;
+    font-family: opensans-semibold,sans-serif;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
