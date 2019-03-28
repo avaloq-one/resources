@@ -6,7 +6,7 @@ You need to include node_modules yourself. Run `ng serve` for a dev server. Navi
 
 ## Description of the use case: Payments calculator
 
-In this example we show how to run an API call fetching transaction data for a particular account in the Avaloq Sandbox using Avaloq Open APIs. It then aggregates the transactions into overall income and expenditures within a certain period which the user can herself define. The application is thus a simple payments calculator.
+In this example we show how to run an API call fetching transaction data for a particular account in the Avaloq Sandbox using Avaloq Open APIs. The application then aggregates the transactions into overall income and expenditures within a certain period which the user can define herself. The application can thus be seen as a simple payments aggregagtor.
 
 Go to 
 
